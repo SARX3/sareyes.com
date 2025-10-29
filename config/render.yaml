@@ -1,0 +1,6 @@
+# render.yaml — placeholder para Render (static site)
+# services:
+# - type: static
+#   name: sareyes-com
+#   buildCommand: ""
+#   staticPublishPath: "/"

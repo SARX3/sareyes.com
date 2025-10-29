@@ -1,0 +1,4 @@
+# robots.txt para sareyes.com
+User-agent: *
+Allow: /
+Sitemap: https://sareyes.com/sitemap.xml
