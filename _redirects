@@ -1,0 +1,9 @@
+# Redirige todo el tráfico de www hacia sareyes.com
+
+https://www.sareyes.com/* https://sareyes.com/:splat 301!
+
+# Redirige todo HTTP hacia HTTPS
+
+http://sareyes.com/_ https://sareyes.com/:splat 301!
+http://www.sareyes.com/_ https://sareyes.com/:splat 301!
+
