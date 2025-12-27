@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Santi Pong — sareyes.com</title>
+    <meta
+      name="description"
+      content="Santi Pong: nuestro primer juego publicado. Descarga para Mac y detalles del juego." />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Santi Pong — sareyes.com" />
+    <meta
+      property="og:description"
+      content="Pong clásico hecho con Python + Arcade. 1 jugador vs CPU y 2 jugadores local." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sareyes.com/games/santi-pong/" />
+    <meta property="og:image" content="/assets/images/og-image.jpg" />
+
+    <!-- CSS -->
+    <link rel="preload" href="/assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <div class="nav">
+        <a class="brand" href="/">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>sareyes.com</span>
+        </a>
+        <nav class="nav-links" aria-label="Secciones">
+          <a href="/">Home</a>
+          <a href="/games/" aria-current="page">Games</a>
+          <a href="/projects/">Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="stack">
+        <section class="card hero">
+          <div class="card-inner">
+            <div class="kicker">Santi Games</div>
+            <h1 class="title">Santi Pong</h1>
+            <p class="subtitle">
+              Nuestro primer juego publicado: Pong clásico con pelota estilo tenis,
+              menú con sliders, y modo 1 jugador vs CPU.
+            </p>
+
+            <div class="hero-actions" style="margin-top:1rem;">
+              <a class="btn btn-primary" href="/downloads/SantiPong_Mac.zip" download>
+                Descargar (Mac)
+              </a>
+              <a class="btn btn-ghost" href="/games/">Ver todos los juegos</a>
+            </div>
+
+            <p class="small muted" style="margin: 1rem 0 0;">
+              ⚠️ En Mac: después de descargar, haz click derecho sobre la app →
+              <strong>Open</strong>. Apple mostrará un aviso porque es un juego independiente.
+            </p>
+          </div>
+        </section>
+
+        <section class="grid grid-2">
+          <article class="card">
+            <div class="card-inner">
+              <h2 style="margin:0;">Controles</h2>
+              <ul class="list">
+                <li><strong>Jugador Izquierdo:</strong> W / S</li>
+                <li><strong>Jugador Derecho:</strong> ↑ / ↓ (solo en 2 jugadores)</li>
+                <li><strong>ESPACIO:</strong> sacar</li>
+                <li><strong>R:</strong> reiniciar marcador</li>
+                <li><strong>ESC:</strong> volver al menú</li>
+              </ul>
+              <hr />
+              <h3 style="margin:0;">Modos</h3>
+              <ul class="list">
+                <li><strong>1 jugador:</strong> vs CPU (con slider de dificultad)</li>
+                <li><strong>2 jugadores:</strong> local (teclado compartido)</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-inner">
+              <h2 style="margin:0;">Screenshots</h2>
+              <p class="small muted">
+                (Opcional) Sube dos imágenes a <code>/assets/images/</code> y reemplaza los placeholders:
+                <code>santi-pong-menu.png</code> y <code>santi-pong-gameplay.png</code>.
+              </p>
+              <div class="grid grid-2" style="margin-top:1rem;">
+                <div class="media">MENU</div>
+                <div class="media">GAMEPLAY</div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="card">
+          <div class="card-inner">
+            <div class="kicker">Detalles</div>
+            <h2 style="margin:0;">Qué hay en esta versión</h2>
+            <ul class="list">
+              <li>Menú con sliders (tamaño paletas, tamaño pelota, velocidad).</li>
+              <li>Pelota estilo tenis.</li>
+              <li>CPU con dificultad ajustable (1..10).</li>
+              <li>Sonidos de rebote y punto.</li>
+            </ul>
+            <hr />
+            <p class="small muted" style="margin:0;">
+              Hecho con <strong>Python + Arcade</strong>. Próximo objetivo: build para Windows.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="site-footer">
+      <p>&copy; 2025 sareyes.com. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>

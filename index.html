@@ -3,69 +3,154 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>sareyes.com — Página en construcción</title>
+    <title>sareyes.com — Portfolio</title>
     <meta
       name="description"
-      content="Sitio oficial de sareyes.com — Página en construcción."
-    />
+      content="Portfolio de Sergio Reyes: proyectos, juegos y experimentos." />
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="/favicon.ico" />
+
     <!-- Open Graph -->
-    <meta property="og:title" content="sareyes.com — Página en construcción" />
+    <meta property="og:title" content="sareyes.com — Portfolio" />
     <meta
       property="og:description"
-      content="Estamos preparando algo genial. Vuelve pronto."
-    />
+      content="Proyectos, juegos y experimentos. Destacado: Santi Pong." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sareyes.com/" />
     <meta property="og:image" content="/assets/images/og-image.jpg" />
+
     <!-- CSS -->
     <link rel="preload" href="/assets/css/main.css" as="style" />
     <link rel="stylesheet" href="/assets/css/normalize.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body>
-    <!-- Reusable header include (optional in static) -->
     <header id="site-header">
-      <nav>
-        <a href="/">sareyes.com</a>
-      </nav>
+      <div class="nav">
+        <a class="brand" href="/">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>sareyes.com</span>
+        </a>
+        <nav class="nav-links" aria-label="Secciones">
+          <a href="/games/">Games</a>
+          <a href="/projects/">Projects</a>
+          <a href="/" aria-current="page">Home</a>
+        </nav>
+      </div>
     </header>
 
     <main class="container">
-      <section class="hero">
-        <h1>🌿 Santi Games - Dec 26 2025</h1>
-        <p>Publicando nuestro primero juego: Santi Pong</p>
+      <div class="stack">
+        <!-- HERO / INTRO -->
+        <section class="card hero">
+          <div class="card-inner">
+            <div class="hero-top">
+              <div>
+                <div class="kicker">Portfolio</div>
+                <h1 class="title">Hola, soy Sergio.</h1>
+                <p class="subtitle">
+                  Construyo productos web, prototipos y experimentos (incluyendo
+                  juegos). Este sitio es mi vitrina.
+                </p>
+              </div>
+              <div class="hero-actions">
+                <a class="btn btn-ghost" href="/games/">Ver juegos</a>
+                <a class="btn btn-ghost" href="/projects/">Ver proyectos</a>
+              </div>
+            </div>
 
-        <p style="font-size: 14px; color: #ccc">
-          ⚠️ En Mac: después de descargar, haz click derecho sobre la app →
-          Open. Apple mostrará un aviso porque es un juego independiente.
+            <hr />
+
+            <div class="grid grid-3">
+              <div class="card" style="box-shadow:none;">
+                <div class="card-inner">
+                  <div class="pill"><strong>Web</strong> Frontend</div>
+                  <p class="small">Landing pages, sitios estáticos, UI limpia.</p>
+                </div>
+              </div>
+              <div class="card" style="box-shadow:none;">
+                <div class="card-inner">
+                  <div class="pill"><strong>Backend</strong> Django</div>
+                  <p class="small">APIs, paneles, apps internas y prototipos.</p>
+                </div>
+              </div>
+              <div class="card" style="box-shadow:none;">
+                <div class="card-inner">
+                  <div class="pill"><strong>Games</strong> Santi Games</div>
+                  <p class="small">Juegos pequeños y divertidos (con mi hijo).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURED -->
+        <section class="card">
+          <div class="card-inner">
+            <div class="kicker">Destacado</div>
+            <h2 style="margin:0;">Santi Pong</h2>
+            <p>
+              Nuestro primer juego publicado (Arcade + Python). Incluye modo
+              <strong>1 jugador vs CPU</strong> con dificultad, y modo
+              <strong>2 jugadores</strong> local.
+            </p>
+
+            <div class="pill" style="margin:.25rem 0 .8rem;">
+              Estado: <strong>Disponible para Mac</strong> • Próximo: Windows
+            </div>
+
+            <p class="small muted" style="margin-top:0;">
+              ⚠️ En Mac: después de descargar, haz click derecho sobre la app →
+              <strong>Open</strong>. Apple mostrará un aviso porque es un juego
+              independiente.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="/downloads/SantiPong_Mac.zip" download>
+                Descargar (Mac)
+              </a>
+              <a class="btn btn-accent" href="/games/santi-pong/">
+                Ver página del juego
+              </a>
+              <a class="btn btn-ghost" href="/games/">Ver todos los juegos</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCIONES -->
+        <section class="grid grid-2">
+          <article class="card">
+            <div class="card-inner">
+              <div class="kicker">Games</div>
+              <h3 style="margin:0;">Santi Games</h3>
+              <p>
+                Mini‑juegos hechos en familia: prototipos rápidos, iteración y
+                diversión.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-ghost" href="/games/">Explorar Games</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-inner">
+              <div class="kicker">Projects</div>
+              <h3 style="margin:0;">Web + Django</h3>
+              <p>
+                Proyectos web, backends, herramientas internas, y experimentos.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-ghost" href="/projects/">Explorar Projects</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <p class="small muted" style="text-align:center; margin: .5rem 0 0;">
+          &mdash; sareyes.com
         </p>
-
-        <a
-          href="/downloads/SantiPong_Mac.zip"
-          download
-          style="
-            display: inline-block;
-            padding: 14px 20px;
-            border-radius: 12px;
-            background: #ffffff;
-            color: #000;
-            text-decoration: none;
-            font-weight: 600;
-          "
-        >
-          Descargar Santi Pong (Mac)
-        </a>
-
-        <p><small>&mdash; sareyes.com</small></p>
-        <!-- Logo pendiente: coloca tu logo en /assets/images/logo.png -->
-        <img
-          src="/assets/images/logo.png"
-          alt="Logo sareyes"
-          style="max-width: 160px; display: none"
-        />
-      </section>
+      </div>
     </main>
 
     <footer id="site-footer">
